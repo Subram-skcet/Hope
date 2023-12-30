@@ -1,0 +1,100 @@
+/* Updated CSS */
+.mimg {
+    position: absolute;
+   min-width: 200px;
+   min-height: 200px;
+  top:2%;
+  right:17%;
+  height: 20vw;
+  width: 20vw;
+  border-radius: 50%;
+  margin-left: 10%;
+  transform: rotate(0deg);
+  object-fit: cover;
+  animation: rotate 5s linear infinite;
+}
+.Wave{
+   position:absolute;
+   right:38%;
+   top:21vw;
+}
+.div {
+  margin-left: 1rem;
+  flex:0.4;
+    min-width: 300px;
+    color:white;
+    display: grid;
+    width: 30vw;
+    height: 78vh;
+    position: relative;
+    overflow: hidden;
+    margin-top:12vh;
+    align-items: center;
+}
+.div::-webkit-scrollbar {
+  display: none;
+}
+.mh1 {
+    position:absolute;
+    top: 26vw;
+    width:100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mp {
+  padding: 0.5rem;
+  white-space: nowrap;
+  position: absolute;
+  display: inline-block;
+  top: 32vw;
+  left: 35%;
+  animation: moveleft 10s linear infinite;
+  /* animation-delay: 10s; */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translate(300px, 0);
+  }
+  100% {
+    transform: translate(-500px, 0);
+  }
+}
+
+/* ... rest of your CSS remains unchanged */
+
+    @media (max-width:1250px){
+        .div > span{
+            top:390px;
+        }
+    }
+    @media (max-width:600px){
+        .div{
+           width:50%;
+          margin-left: 16%; 
+          margin-right: auto;
+        }
+    }
+    
+    @media (max-width:1100px){
+        .Wave{
+            top:220px;
+            right:33%;
+        }
+    
+        .div > p{
+    
+            top:274px;
+        }
+    }

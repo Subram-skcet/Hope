@@ -1,0 +1,88 @@
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 20px;
+  height: 65px;
+  width: 100%;
+  background-color: #282828;
+}
+
+.footer_right * .MuiSlider-root {
+  color: green;
+}
+.footer_left {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 300px;
+  flex: 0.3;
+}
+
+.footer_green {
+  color: #1ed15e;
+}
+
+.footer_center {
+  justify-content: space-between;
+  gap:1rem;
+  flex: 0.4;
+  max-width: 300px;
+  padding: 0 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer_icon:hover,
+.footer_green:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
+}
+
+.footer_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  flex: 0.3;
+}
+
+.footer_albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+.footer_albumLogo > img{
+  height: 60px;
+  width: 60px;
+}
+
+.footer_songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.footer_songInfo > p {
+  font-size: 12px;
+}
+
+@media (max-width:800px){
+  .footer{
+    margin-right: none;
+    align-items: flex-start;
+  }
+  .footer_left{
+      margin-left:0;
+      /* flex:0.8; */
+    }
+    .footer_center{
+      padding-left: 10px;
+      gap:0.1rem;
+      flex:0.3;
+    }
+    .footer_right{
+    display: none;
+    }
+}

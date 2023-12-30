@@ -1,0 +1,26 @@
+.mbody{
+    width:81vw;
+    height: 100vh;
+    display: flex;
+    gap:1rem;
+    /* overflow-x: hidden; */
+  background: linear-gradient(rgba(85, 24, 129, 0.704), rgba(0, 0, 0, 1));
+}
+.mbody::-webkit-scrollbar{
+    display: none;
+}
+@media (max-width:600px){
+    .mbody{
+        flex-direction: column;
+        height:200vh;
+        width:100vw;
+    }
+    /* .p{
+        height:60px;
+    } */
+}
+.p{
+    color:aliceblue;
+    background-color: magenta;
+
+}

@@ -1,0 +1,28 @@
+.player_body{
+    display:flex;
+}
+
+.player{
+     overflow-y: overlay;
+       /* width: 100vw; */
+   background:black;
+}
+.menu{
+    cursor: pointer;
+    color:white;
+    width: max-content;
+}
+.closemenu{
+   position:relative;
+   top:20px;
+   left: 205px;
+    cursor: pointer;
+    color:white;
+    width: max-content;
+}
+
+@media (min-width:1300px){
+    .closemenu{
+       z-index:-1;
+    }
+}

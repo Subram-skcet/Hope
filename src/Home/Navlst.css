@@ -1,0 +1,24 @@
+.tot{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+    color: grey;
+    width:80%;
+    /* background-color: aqua; */
+    text-decoration: none;
+    margin:5 rem auto;
+}
+
+.hk{
+    color:white;
+}
+ul{
+    list-style-type: none;
+}
+
+@media (max-width:600px){
+    .tot{
+        margin: 1rem;
+        gap: 1rem;
+    }
+}
