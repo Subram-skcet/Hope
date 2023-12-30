@@ -15,7 +15,7 @@
 }
 .Wave{
    position:absolute;
-   right:38%;
+   right:25%;
    top:21vw;
 }
 .div {
@@ -89,8 +89,8 @@
     
     @media (max-width:1100px){
         .Wave{
-            top:220px;
-            right:33%;
+            top:229px;
+            right:20%;
         }
     
         .div > p{
